@@ -1,9 +1,7 @@
-Bring Modules
-=============
+Bring
+=====
 
-A little node water to bring your modules to life.
-
-Part of the node-wtr project.
+A little [node water](https://github.com/aogriffiths/node-wtr) to bring your modules to life.
 
 "Bring" is inspired in some ways by the Java Spring framework. It hels you build 
 easily configurable node applications based on modules your bring to life and link 
