@@ -1,6 +1,8 @@
 Bring Modules
 =============
 
+A little node water to bring your modules to life.
+
 Part of the node-wtr project.
 
 "Bring" is inspired in some ways by the Java Spring framework. It hels you build 
@@ -62,7 +64,3 @@ dependancies:
 
 Made up of as many module:config elements as you need, where module is the name of the node module
 you require and config currently takes one option:
-
-
-
-
