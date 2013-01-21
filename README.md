@@ -48,9 +48,9 @@ Bring configuration is a JSON object in the following format.
 
 At the top level there are three sections, require, construct and templates.
 
-````json
+````js
 config = {
-  "require" :   required-modules,      //required. (eee Requiring Modules)
+  "require" :   required-modules,      //required. (see Requiring Modules)
   "construct" : constructors,          //required. (see Constucting Modules)
   "templates" : template-constructors  //optional. (see Templates)
 }
