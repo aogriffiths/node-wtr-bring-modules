@@ -7,6 +7,9 @@
 ```
 Part of the [Node Water](https://github.com/aogriffiths/node-wtr) collection. 
 
+Introduction
+------------
+
 * __bring-modules__ - Bring your node.js modules to life.
     * On [github.com](https://github.com/aogriffiths/node-wtr-bring-modules)
     * On [npmjs.org](https://npmjs.org/package/bring-modules)
