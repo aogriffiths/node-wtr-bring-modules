@@ -58,7 +58,7 @@ config = {
 
 ### Requiring Modules
 
-````json
+````js
 required-modules = {
   "<module-name>": module-options,
   ...    
@@ -73,18 +73,20 @@ module-options = {
 Effectively this is just a wrapper for the `require()` function. 
 
 * required-modules. Object. With 1..\* properties:
-** <module-name> - Object. Modules are stored for later use to module-names need 
-to be unique. Unless real-name is also give, module-name is also the string passed to 
-require e.g. `require('<module-name>')`.
+
+    * <module-name> - Object. Modules are stored for later use to module-names need 
+      to be unique. Unless real-name is also give, module-name is also the string passed to 
+      require e.g. `require('<module-name>')`.
+
 * module-options - Object. With 2 properties:
-** depends - Array. Lists the module-names that should be loaded before this module. 
-** real-name - String. If you need to give a module your own name use this option. Make module-name the 
-name you want to use it and real-name is the name you would normall pass to the `require()` 
-function.
+    * depends - Array. Lists the module-names that should be loaded before this module. 
+    * real-name - String. If you need to give a module your own name use this option. 
+      Make module-name the name you want to use it and real-name is the name you would 
+      normall pass to the `require()` function.
 
 ### Constucting Modules
 
-````json
+````js
 constructors = {
   "< >":  ,
   ...    
@@ -94,7 +96,7 @@ TODO
 
 ### Templates
 
-````json
+````js
 template-constructors = {
   "< >":  ,
   ...    
