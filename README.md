@@ -38,16 +38,14 @@ Installation
 ------------
 
 Official releases can be obtained from:
-
-__github.com__ in the [tags](https://github.com/aogriffiths/node-wtr-bring-modules/tags) 
-section, as zip or tar.gz packages. 
-
-__npm__ using `npm install bring-modules`
+* __github.com__ - the [tags section](https://github.com/aogriffiths/node-wtr-bring-modules/tags) 
+                   provides links to zip or tar.gz packages. 
+* __npm__        - using `npm install bring-modules`
 
 The lastest developed code may node have not have been released, but can always be found
-here:
-
-__github.com__ [node-wtr-bring-modules)(https://github.com/aogriffiths/node-wtr-bring-modules)
+from:
+* __github.com__ - the [project homepage](https://github.com/aogriffiths/node-wtr-bring-modules)
+                   provides links to all the source code, branches and issue tracking.
 
 The Config File
 ---------------
