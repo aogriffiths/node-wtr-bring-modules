@@ -8,8 +8,8 @@
 Part of the [Node Water](https://github.com/aogriffiths/node-wtr) collection. 
 
 * __bring-modules__ - Bring your node.js modules to life.
-    * [github.com](https://github.com/aogriffiths/node-wtr-bring-modules)
-    * [npmjs.org](https://npmjs.org/package/bring-modules)
+    * On [github.com](https://github.com/aogriffiths/node-wtr-bring-modules)
+    * On [npmjs.org](https://npmjs.org/package/bring-modules)
         
 So What Does it Do?!
 --------------------
@@ -34,6 +34,15 @@ bring.autoconfigure();
 
 Your application is now running! 
 
+Installation
+------------
+
+Code is released on Github, see [tags](https://github.com/aogriffiths/node-wtr-bring-modules/tags) 
+for the latest version. Or install using npm:
+
+```bash
+npm install bring-modules
+```
 
 The Config File
 ---------------
