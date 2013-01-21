@@ -6,15 +6,10 @@
 ((,(,' ((_( (( (('(|             n             \|/            |                |
 ```
 
-Bring
-=====
-
-Preamble
---------
-
-[Node water](https://github.com/aogriffiths/node-wtr) to bring your node.js modules 
-to life.
-
+* __bring-modules__ - Bring your node.js modules to life.
+    * [github.com](https://github.com/aogriffiths/node-wtr-bring-modules)
+    * [npmjs.org](https://npmjs.org/package/bring-modules)
+        
 So What Does it Do?!
 --------------------
 
