@@ -2,7 +2,7 @@
   "name": "bring-modules",
   "description": "Bring your node.js modules to life",
   "keywords": ["water"],
-  "version": "0.0.4",
+  "version": "0.0.5",
   "engines": {
     "node": "*"
   },
