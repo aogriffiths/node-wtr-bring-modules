@@ -1,0 +1,28 @@
+{
+  "name": "bring-modules",
+  "description": "Bring your node.js modules to life",
+  "keywords": ["water"],
+  "version": "0.0.2",
+  "engines": {
+    "node": "*"
+  },
+  "author": {
+    "name": "Adam Griffiths",
+    "url": "https://github.com/aogriffiths"
+  },
+  "homepage": "https://github.com/aogriffiths/node-wtr-bring-modules",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/aogriffiths/node-wtr-bring-modules.git"
+  },
+  "scripts": {
+    "test": "synct test/*.js"
+  },
+  "main": "./index",
+  "dependencies": {
+    "async" : ">=0.1.22",
+    "underscore" : ">=1.4.3"
+  },
+  "devDependencies": {},
+  "optionalDependencies": {}
+}

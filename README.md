@@ -70,7 +70,7 @@ module-options = {
 }
 ````
 
-Effectively this is just a wrapper for the `require()` function. 
+Effectively this a wrapper for the `require()` function with a few extra options:
 
 * __required-modules__ - Object. With 1..\* properties:
 
