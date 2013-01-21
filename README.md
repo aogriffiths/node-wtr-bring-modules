@@ -1,16 +1,40 @@
+```
+                                 .("""")                                      (j)
+                               (_(_ __(_ )                                 (n o d e)
+ _ _ _       _                   / / /                       (n)              (s)
+ ))`)`) ___  )L __ __           / / /           n            \|/              \|/
+((,(,' ((_( (( (('(|             n             \|/            |                |
+```
+
 Bring
 =====
 
-A little [node water](https://github.com/aogriffiths/node-wtr) to bring your modules to life.
+Preamble
+--------
 
-"Bring" is inspired in some ways by the Java Spring framework. It hels you build 
-easily configurable node applications based on modules your bring to life and link 
-together.
+[Node water](https://github.com/aogriffiths/node-wtr) to bring your node.js modules 
+to life.
+
+So What Does it Do?!
+--------------------
+
+"Bring" follows an inversion of control pattern similar to Java Spring.
+It helps you easily build applications from modules which you link together using 
+configuration, not code.
+
+At runtime Bring reads your configuration file(s) and instantiates the modules that are
+specified. It sets options, calls functions on those modules and can pass refences 
+between them or to your main application. Using bring you can have an application
+bootstrapped, up and running almost entirely by configuration. This is great if you want to 
+"mix" different varients of your application or run your application with different 
+configurations in different environments.
 
 For example:
 
-    var bring = require('bring-modules');
-    bring.autoconfigure();
+````js
+var bring = require('bring-modules');
+bring.autoconfigure();
+````
 
 Your application is now running! 
 
@@ -18,47 +42,63 @@ Your application is now running!
 The Config File
 ---------------
 
-Written in JSON config files have the following format:
+Bring configuration is a JSON object in the following format.
 
-At the top level there are three sections.
+### Top Level
 
-    config = {
-      "require" :   required-modules,      //required
-      "construct" : constructors           //required
-      "templates" : template-constructors, //optional
-    }
+At the top level there are three sections, require, construct and templates.
 
+````json
+config = {
+  "require" :   required-modules,      //required. (eee Requiring Modules)
+  "construct" : constructors,          //required. (see Constucting Modules)
+  "templates" : template-constructors  //optional. (see Templates)
+}
+````
 
-Requiring modules
+### Requiring Modules
 
-    required-modules = {
-      "<module-name>": module-options,
-      ...    
-    }
+````json
+required-modules = {
+  "<module-name>": module-options,
+  ...    
+}
 
-    module-options = {
-      "depends": ["<module-name>", ...],
-      "real-name": "<module-real-name>"
-    }
+module-options = {
+  "depends": ["<module-name>", ...],
+  "real-name": "<module-real-name>"
+}
+````
 
-Effectively this is just a wrapper for the require('<module-name>') function. 
-When modules are required they are stored for later use under thier module-name. 
+Effectively this is just a wrapper for the `require()` function. 
 
-If you need to require a module but give it a name of your own use module-name with the
-real-name option, where module-name is the name you want to give it and real-name is the name
-you would pass to the require() function.
+* required-modules. Object. With 1..\* properties:
+** <module-name> - Object. Modules are stored for later use to module-names need 
+to be unique. Unless real-name is also give, module-name is also the string passed to 
+require e.g. `require('<module-name>')`.
+* module-options - Object. With 2 properties:
+** depends - Array. Lists the module-names that should be loaded before this module. 
+** real-name - String. If you need to give a module your own name use this option. Make module-name the 
+name you want to use it and real-name is the name you would normall pass to the `require()` 
+function.
 
-The depends array is a list of module-names that should be loaded before this module. It is
-unlikely to be needed.
+### Constucting Modules
 
+````json
+constructors = {
+  "< >":  ,
+  ...    
+}
+````
+TODO
 
-  
-<module>:
-  0..1 dependancies (array)
+### Templates
 
-dependancies:
-  0..1 dependancyname (string)
+````json
+template-constructors = {
+  "< >":  ,
+  ...    
+}
+````
 
-
-Made up of as many module:config elements as you need, where module is the name of the node module
-you require and config currently takes one option:
+TODO
