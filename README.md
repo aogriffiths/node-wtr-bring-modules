@@ -72,15 +72,15 @@ module-options = {
 
 Effectively this is just a wrapper for the `require()` function. 
 
-* required-modules. Object. With 1..\* properties:
+* __required-modules__ - Object. With 1..\* properties:
 
-    * <module-name> - Object. Modules are stored for later use to module-names need 
+    * __\<module-name\>__ - Object. Modules are stored for later use to module-names need 
       to be unique. Unless real-name is also give, module-name is also the string passed to 
       require e.g. `require('<module-name>')`.
 
-* module-options - Object. With 2 properties:
-    * depends - Array. Lists the module-names that should be loaded before this module. 
-    * real-name - String. If you need to give a module your own name use this option. 
+* __module-options__ - Object. With 2 properties:
+    * __depends__ - Array. Lists the module-names that should be loaded before this module. 
+    * __real-name__ - String. If you need to give a module your own name use this option. 
       Make module-name the name you want to use it and real-name is the name you would 
       normall pass to the `require()` function.
 
