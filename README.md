@@ -37,8 +37,8 @@ Your application is now running!
 Installation
 ------------
 
-Code is released on Github, see [tags](https://github.com/aogriffiths/node-wtr-bring-modules/tags) 
-for the latest version. Or install using npm:
+Code is released on Github, see the [tags](https://github.com/aogriffiths/node-wtr-bring-modules/tags) 
+section to download the latest version as a zip or tar.gz package. Or install using npm:
 
 ```bash
 npm install bring-modules
