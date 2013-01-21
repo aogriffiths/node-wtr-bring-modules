@@ -40,7 +40,7 @@ Installation
 Official releases can be obtained from:
 * __github.com__ - the [tags section](https://github.com/aogriffiths/node-wtr-bring-modules/tags) 
                    provides links to zip or tar.gz packages. 
-* __npm__        - using `npm install bring-modules`
+* __npm__        - use `npm install bring-modules`
 
 The lastest developed code may node have not have been released, but can always be found
 from:
